@@ -1,3 +1,8 @@
 .env
 .env.local
 node_modules/
+.private/
+.local/
+config/sources.local.json
+.env.*
+!.env.example

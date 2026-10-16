@@ -1,0 +1,48 @@
+{
+  "schema_version": "0.1",
+  "snapshot_id": "fogline-utility-2026-10-15",
+  "study_id": "fogline-utility",
+  "observed_at": "2026-10-15",
+  "state": "hypothesis",
+  "geographic_scope": "San Francisco — editorial city context; not a prevalence claim",
+  "observation": "Weather-aware utility, softened by knit and washed surfaces.",
+  "confidence": "low",
+  "visual_studies": [
+    {"asset": "dist/assets/studies/fogline-utility.png", "kind": "synthetic_editorial", "observed_at": "2026-10-15"},
+    {"asset": "dist/assets/studies/fogline-utility-02.png", "kind": "synthetic_editorial", "observed_at": "2026-10-15"},
+    {"asset": "dist/assets/studies/fogline-utility-03.png", "kind": "synthetic_editorial", "observed_at": "2026-10-15"},
+    {"asset": "dist/assets/studies/fogline-utility-04.png", "kind": "synthetic_editorial", "observed_at": "2026-10-15"}
+  ],
+  "candidate_objects": [
+    {
+      "name": "Salomon XT-6",
+      "source_name": "Salomon official product page",
+      "source_url": "https://www.salomon.com/en-us/product/xt-6-lg4239/L45472800?sizeId=L45472800026",
+      "observed_at": "2026-10-15",
+      "evidence_state": "candidate_object",
+      "commercial_relationship": "none",
+      "claim_boundary": "Product reference only. It does not establish product prevalence, purchasing, or local adoption in San Francisco."
+    },
+    {
+      "name": "Arc'teryx Beta Jacket",
+      "source_name": "Arc'teryx official product page",
+      "source_url": "https://arcteryx.com/us/en/shop/mens/beta-jacket-0511",
+      "observed_at": "2026-10-15",
+      "evidence_state": "candidate_object",
+      "commercial_relationship": "none",
+      "claim_boundary": "Product reference only. It does not establish product prevalence, purchasing, or local adoption in San Francisco."
+    },
+    {
+      "name": "Peak Design Everyday Backpack",
+      "source_name": "Peak Design official product page",
+      "source_url": "https://www.peakdesign.com/products/everyday-backpack?Color=Black&Size=30L",
+      "observed_at": "2026-10-15",
+      "evidence_state": "candidate_object",
+      "commercial_relationship": "none",
+      "claim_boundary": "Product reference only. It does not establish product prevalence, purchasing, or local adoption in San Francisco."
+    }
+  ],
+  "counterexample": "Not every person in the Bay Area dresses for fog or utility.",
+  "open_question": "Does this silhouette appear across independent retail, local scenes and consented visual panels?",
+  "next_review": "2026-10-22"
+}

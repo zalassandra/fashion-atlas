@@ -6,15 +6,17 @@ This file records prospective inputs before they are used in a study. A source i
 
 The first useful cadence is a **monthly snapshot**, supplemented by a weekly watchlist for fast-moving signals. The Atlas should store a dated observation, not claim continuous real-time knowledge.
 
-## Candidate inputs
+## Connection state — 2026-10-16
 
 | Layer | Candidate input | What it can contribute | Status |
 | --- | --- | --- | --- |
-| Visual | Commissioned or explicitly licensed street-fashion photography | Documented silhouettes and styling details | Not connected |
-| Trend | Pinterest Trends API, where terms and access allow | Regional keyword movement | Not connected |
-| Commerce | Partner or merchant product feeds | Product availability, price, taxonomy and newness | Not connected |
-| Commerce | Shopify Storefront Catalogs from participating stores | Product images, collections, availability and outbound product URLs | Not connected |
-| Resale | eBay Browse API | Searchable listings and secondary-market availability | Not connected |
+| Visual | Consented visual panel | Garment tags and documented context | Working local intake + private review; no contributors collected, no automatic vision |
+| Visual discovery | Wikimedia Commons category metadata | CC-licensed candidate references with source and attribution | Live collection verified: 11 candidates in first private batch; no image downloads or city inference |
+| Trend | Pinterest Trends API | Regional keyword movement | Client implemented; token and approved access missing |
+| Commerce | Shopify Global Catalog | Live merchant photographs and listings | Live tested with Fashion Atlas UCP profile; display-only, no result or image caching |
+| Commerce | Shopify Storefront from participating stores | Product availability, price and media references | Client implemented; authorized merchant configuration missing |
+| Resale | eBay Browse API | Listings and secondary-market availability | Client implemented; application credentials and production access missing |
+| Visual | Instagram opted-in Professional account | Participant-declared visual context | Client implemented; account token and participant consent missing |
 | Context | Local fashion calendars, music/event listings and editorial research | Context for interpretation and counterexamples | Manual research |
 
 ## Every stored signal requires
@@ -39,3 +41,9 @@ Retail objects can appear in a study only when their image and outbound link com
 ## Human judgment layer
 
 The judgment layer may propose a new silhouette or an evolving signal, but it cannot publish a claim automatically. A human editor must review provenance, regional relevance, counterexamples and wording before a study changes state from `hypothesis` to `supported`.
+
+## Storage boundaries
+
+Shopify Global Catalog search results are transient commerce UI only. Never put them, their images or a derived historical archive into `data/snapshots`. Other API data needs an explicit, source-specific retention grant before `collect` writes to ignored `.local/connector-runs`. Private submissions remain in `.private/visual-panel`, never in Git or the static website. Only reviewed, permitted aggregates can become public snapshots.
+
+The weekly automation is configured in the owner's Codex app. It is not a continuously deployed collector, and it cannot activate provider accounts or manufacture a new observation when no source is connected.

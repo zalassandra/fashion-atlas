@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {"id": "commons-street-fashion", "provider": "commons", "enabled": true, "access_reference": "Public Wikimedia Commons Action API; metadata only with recorded CC license", "category": "Category:Street fashion", "limit": 12, "retention_approved": true, "retention_reference": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia; retain source, attribution and per-record CC license; no images or free-text descriptions", "retention_days": 30},
+    {"id": "shopify-partner-catalog", "provider": "shopify", "enabled": false, "access_reference": "", "auth_mode": "tokenless", "api_version": "2026-10", "query": "", "limit": 12, "retention_approved": false, "retention_reference": "", "retention_days": 0},
+    {"id": "ebay-trail-runners", "provider": "ebay", "enabled": false, "access_reference": "", "environment": "sandbox", "production_access_confirmed": false, "marketplace": "EBAY_US", "query": "Salomon XT-6", "limit": 12, "retention_approved": false, "retention_reference": "", "retention_days": 0},
+    {"id": "pinterest-us-interest", "provider": "pinterest", "enabled": false, "access_reference": "", "trends_access_confirmed": false, "region": "US", "trend_type": "growing", "limit": 12, "retention_approved": false, "retention_reference": "", "retention_days": 0},
+    {"id": "instagram-opted-in-panel", "provider": "instagram", "enabled": false, "access_reference": "", "account_access_confirmed": false, "api_version": "v24.0", "participant_consent_reference": "", "declared_city": "", "limit": 12, "retention_approved": false, "retention_reference": "", "retention_days": 0}
+  ]
+}

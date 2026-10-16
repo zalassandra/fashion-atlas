@@ -1,0 +1,18 @@
+{
+  "kind": "acquisition_status",
+  "source_id": "commons-street-fashion",
+  "source_url": "https://commons.wikimedia.org/wiki/Category:Street_fashion",
+  "observed_at": "2026-10-16T23:00:02.646Z",
+  "requested_page_limit": 12,
+  "accepted_metadata_records": 11,
+  "license_counts": {"CC BY 2.0": 1, "CC BY-SA 4.0": 10},
+  "image_downloads": 0,
+  "geographic_scope": "Category discovery, no geographic inference",
+  "state": "unreviewed_candidates",
+  "private_storage": ".local/connector-runs/",
+  "limitations": [
+    "This is a successful acquisition check, not a published fashion finding.",
+    "New to a category does not mean newly photographed or newly fashionable.",
+    "A bounded convenience sample cannot establish local popularity."
+  ]
+}
